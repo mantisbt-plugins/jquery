@@ -41,7 +41,7 @@ class jQueryPlugin extends MantisPlugin {
 	 * Create the resource link to load the jQuery library.
 	 */
 	function resources( $p_event ) {
-		return '<script type="text/javascript" src="' . plugin_file( 'jquery-1.3.2.min.js' ) . '"></script>';
+		return '<script type="text/javascript" src="' . plugin_file( 'jquery-min.js' ) . '"></script>';
 	}
 }
 
