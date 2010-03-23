@@ -21,7 +21,7 @@ class jQueryPlugin extends MantisPlugin {
 		$this->name = 'jQuery Library';
 		$this->description = 'Provides access to the jQuery library in a single dependency.';
 
-		$this->version = '1.3.2';
+		$this->version = '1.4.2';
 		$this->requires = array(
 			'MantisCore' => '1.2.0',
 		);
