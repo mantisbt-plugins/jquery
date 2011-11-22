@@ -19,9 +19,9 @@ class jQueryPlugin extends MantisPlugin {
 
 	function register() {
 		$this->name = 'jQuery Library';
-		$this->description = 'Provides access to the jQuery library in a single dependency.';
+		$this->description = 'Provides access to the jQuery and jQuery UI library in a single dependency.';
 
-		$this->version = '1.4.2';
+		$this->version = '1.6.2';
 		$this->requires = array(
 			'MantisCore' => '1.2.0',
 		);
@@ -41,8 +41,10 @@ class jQueryPlugin extends MantisPlugin {
 	 * Create the resource link to load the jQuery library.
 	 */
 	function resources( $p_event ) {
-		return '<script type="text/javascript" src="' . plugin_file( 'jquery-min.js' ) . '"></script>'.
-			'<script type="text/javascript">jQuery.noConflict();</script>';
+		return '<link rel="Stylesheet" type="text/css" href="' . plugin_file( 'jquery-ui.css') . '" />' .
+		    '<script type="text/javascript" src="' . plugin_file( 'jquery-min.js' ) . '"></script>'.
+			'<script type="text/javascript">jQuery.noConflict();</script>' .
+		    '<script type="text/javascript" src="' . plugin_file( 'jquery-ui-min.js' ) . '"></script>';
 	}
 }
 
