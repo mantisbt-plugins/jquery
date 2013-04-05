@@ -24,8 +24,8 @@ class jQueryPlugin extends MantisPlugin {
 
 		$this->version = '1.8.2';
 		$this->requires = array(
-			'MantisCore' => '1.2.0',
-			'MantisCore' => '< 1.3', # Plugin not needed with 1.3 (jQuery is bundled)
+			# Plugin not needed with 1.3 (jQuery is bundled)
+			'MantisCore' => '1.2.0, < 1.3',
 		);
 
 		$this->author	= 'John Reese and MantisBT Team';
