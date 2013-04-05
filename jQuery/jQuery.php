@@ -1,5 +1,6 @@
 <?php
-# Copyright (C) 2009 John Reese, LeetCode.net
+# Copyright (C) 2009 - 2012  John Reese, LeetCode.net
+# Copyright (C) 2012 - 2013  MantisBT Team - mantisbt-dev@lists.sourceforge.net
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -27,9 +28,9 @@ class jQueryPlugin extends MantisPlugin {
 			'MantisCore' => '< 1.3', # Plugin not needed with 1.3 (jQuery is bundled)
 		);
 
-		$this->author	= 'John Reese';
-		$this->contact	= 'jreese@leetcode.net';
-		$this->url		= 'http://leetcode.net';
+		$this->author	= 'John Reese and MantisBT Team';
+		$this->contact	= 'mantisbt-dev@lists.sourceforge.net';
+		$this->url		= 'https://github.com/mantisbt-plugins/jquery';
 	}
 
 	function hooks() {
