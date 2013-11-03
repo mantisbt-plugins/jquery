@@ -41,10 +41,10 @@ class jQueryPlugin extends MantisPlugin {
 	 * Create the resource link to load the jQuery library.
 	 */
 	function resources( $p_event ) {
-                return  '<link rel="Stylesheet" type="text/css" href="' . plugin_file( 'jquery-ui-1.10.3/css/ui-lightness/jquery-ui-1.10.3.custom.min.css') . '" />' .
-                        '<script type="text/javascript" src="' . plugin_file( 'jquery-ui-1.10.3/js/jquery-1.9.1.min.js' ) . '"></script>'.
+                return  '<link rel="Stylesheet" type="text/css" href="' . plugin_file( 'jquery-ui/css/ui-lightness/jquery-ui-min.css') . '" />' .
+                        '<script type="text/javascript" src="' . plugin_file( 'jquery-ui/js/jquery-min.js' ) . '"></script>'.
                         '<script type="text/javascript">jQuery.noConflict();</script>' .
-                        '<script type="text/javascript" src="' . plugin_file( 'jquery-ui-1.10.3/js/jquery-ui-1.10.3.custom.min.js' ) . '"></script>';
+                        '<script type="text/javascript" src="' . plugin_file( 'jquery-ui/js/jquery-ui-min.js' ) . '"></script>';
 	}
 }
 
