@@ -21,14 +21,14 @@ class jQueryPlugin extends MantisPlugin {
 		$this->name = 'jQuery Library';
 		$this->description = 'Provides access to the jQuery and jQuery UI library in a single dependency.';
 
-		$this->version = '1.6.2';
+		$this->version = '1.9.1';
 		$this->requires = array(
 			'MantisCore' => '1.2.0',
 		);
 
 		$this->author	= 'John Reese';
 		$this->contact	= 'jreese@leetcode.net';
-		$this->url		= 'http://leetcode.net';
+		$this->url	= 'https://github.com/tkalbitz/jquery';
 	}
 
 	function hooks() {
@@ -41,10 +41,10 @@ class jQueryPlugin extends MantisPlugin {
 	 * Create the resource link to load the jQuery library.
 	 */
 	function resources( $p_event ) {
-		return '<link rel="Stylesheet" type="text/css" href="' . plugin_file( 'jquery-ui.css') . '" />' .
-		    '<script type="text/javascript" src="' . plugin_file( 'jquery-min.js' ) . '"></script>'.
-			'<script type="text/javascript">jQuery.noConflict();</script>' .
-		    '<script type="text/javascript" src="' . plugin_file( 'jquery-ui-min.js' ) . '"></script>';
+                return  '<link rel="Stylesheet" type="text/css" href="' . plugin_file( 'jquery-ui-1.10.3/css/ui-lightness/jquery-ui-1.10.3.custom.min.css') . '" />' .
+                        '<script type="text/javascript" src="' . plugin_file( 'jquery-ui-1.10.3/js/jquery-1.9.1.min.js' ) . '"></script>'.
+                        '<script type="text/javascript">jQuery.noConflict();</script>' .
+                        '<script type="text/javascript" src="' . plugin_file( 'jquery-ui-1.10.3/js/jquery-ui-1.10.3.custom.min.js' ) . '"></script>';
 	}
 }
 
