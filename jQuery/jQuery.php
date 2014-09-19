@@ -1,6 +1,6 @@
 <?php
 # Copyright (C) 2009 - 2012  John Reese, LeetCode.net
-# Copyright (C) 2012 - 2013  MantisBT Team - mantisbt-dev@lists.sourceforge.net
+# Copyright (C) 2012 - 2014  MantisBT Team - mantisbt-dev@lists.sourceforge.net
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -22,7 +22,7 @@ class jQueryPlugin extends MantisPlugin {
 		$this->name = 'jQuery Library';
 		$this->description = 'Provides access to the jQuery library in a single dependency.';
 
-		$this->version = '1.8.2';
+		$this->version = '1.11.1';
 		$this->requires = array(
 			# Plugin not needed with 1.3 (jQuery is bundled)
 			'MantisCore' => '1.2.0, < 1.3',
@@ -47,4 +47,3 @@ class jQueryPlugin extends MantisPlugin {
 			'<script type="text/javascript">jQuery.noConflict();</script>';
 	}
 }
-
