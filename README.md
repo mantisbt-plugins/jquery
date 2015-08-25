@@ -35,7 +35,7 @@ as the library is already bundled with the core.
 ## Support
 
 Submit Bug reports on the
-[Github issues tracker](https://github.com/mantisbt-plugins/inline-history/jquery).
+[Github issues tracker](https://github.com/mantisbt-plugins/jquery/issues).
 
 The latest source code can found on
 [Github](https://github.com/mantisbt-plugins/jquery).
